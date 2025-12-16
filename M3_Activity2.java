@@ -1,11 +1,13 @@
 package M3_Activity;
 
 import java.util.HashSet;
+//import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class M3_Activity2 {
 	
 	private HashSet<String> list=new HashSet<>();
+	//private LinkedHashSet<String> list=new LinkedHashSet<>();
 	private String findproduct;
 	
 	
