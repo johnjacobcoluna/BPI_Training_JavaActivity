@@ -5,17 +5,17 @@ import java.util.HashSet;
 import java.util.Scanner;
 
 public class M3_Activity2 {
-	
+
 	private HashSet<String> list=new HashSet<>();
-	//private LinkedHashSet<String> list=new LinkedHashSet<>();
 	private String findproduct;
-	
+	//private LinkedHashSet<String> list=new LinkedHashSet<>();
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		int option;
 		M3_Activity2 product=new M3_Activity2();
+		product.productlist();
 		do 
 		{
 			System.out.println("======== Select an Option ========");
@@ -50,14 +50,17 @@ public class M3_Activity2 {
 			sc.close();
 			System.exit(0);
 	}
-	public void countproductList()
+	public void productlist()
 	{
 		list.add("Laptop");
 		list.add("Mouse");
 		list.add("Keyboard");
 		list.add("Printer");
 		list.add("Monitor");
-		
+	}
+	public void countproductList()
+	{
+
 		int i=1;
 		
 		System.out.println("All Products:");
