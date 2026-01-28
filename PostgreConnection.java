@@ -7,18 +7,7 @@ import java.sql.Connection;
 public class PostgreConnection {
 	public static Connection connection = null;
 
-	protected static final String URL = "jdbc:postgresql://localhost:5432/training_db";
-	protected static final String USER = "postgres";
-	protected static final String PASSWORD = "postgres";
-
-	public static void getDBConnection() {
-		try {
-			connection = DriverManager.getConnection(URL, USER, PASSWORD);
-		} catch (Exception e) {
-			System.out.println(e);
-			e.printStackTrace();
-		}
-
-	}
-
+	public static final String URL = "jdbc:postgresql://localhost:5432/training_db";
+	public static final String USER = "postgres";
+	public static final String PASSWORD = "postgres";
 }
