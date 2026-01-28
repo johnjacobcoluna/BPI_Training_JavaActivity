@@ -43,12 +43,10 @@ public class Courses extends PostgreConnection {
 					connection.close();
 				}
 			} catch (Exception e) {
-				System.out.println(e);
-				e.printStackTrace();
+				System.err.println("ERROR: "+e.getMessage());
 			}
 		} catch (Exception e) {
-			System.out.println(e);
-			e.printStackTrace();
+			System.err.println("ERROR: "+e.getMessage());
 		}
 		
 	}
@@ -72,8 +70,7 @@ public class Courses extends PostgreConnection {
 			}
 			
 		} catch (Exception e) {
-			System.out.println(e);
-			e.printStackTrace();
+			System.err.println("ERROR: "+e.getMessage());
 		}
 		
 	}
